@@ -1,0 +1,17 @@
+<div id="monApp" class="container mt-4 mb-4 p-3">
+    <div class="mb-3">
+        <p>v-on + v-bind</p>
+        <input v-on:keyup="afficherNameUser" v-bind:value="nameUser" type="text" class="form-control" >
+    </div>
+    <div class="mb-3">
+        <p>{{nameUser}}</p>
+    </div>
+    <div class="mb-3">
+        <p>v-model</p>
+        <!-- modèle MVC vs MVVM  -->
+        <input v-model="userName" type="text" class="form-control" >
+    </div>
+    <div class="mb-3">
+        <p>{{userName}}</p>
+    </div>
+</div>
