@@ -4,17 +4,17 @@ Vue.createApp({
     //! Toutes les data seront contenues dans this
     data() {
         return {
-            selectCard1: false,
-            selectCard2: false,
+            selectCard1: true,
+            selectCard2: true,
         };
     },
     //! Dans cet Object methods, on va écrire nos fonctions
     methods: {
         selectCard(uneCard) {
             if(uneCard == 1){
-                this.selectCard1= true;
+                this.selectCard1= !this.selectCard1;
             }else if(uneCard == 2){
-                this.selectCard2= true;
+                this.selectCard2= !this.selectCard2;
             };
     },
 

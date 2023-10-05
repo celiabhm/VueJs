@@ -4,19 +4,16 @@ Vue.createApp({
     //! Toutes les data seront contenues dans this
     data() {
         return {
-            selectCard1: false,
-            selectCard2: false,
+            nomFilms: '',
+            mesFilms:[ ],
+            
         };
     },
     //! Dans cet Object methods, on va écrire nos fonctions
     methods: {
-        selectCard(uneCard) {
-            if(uneCard == 1){
-                this.selectCard1= true;
-            }else if(uneCard == 2){
-                this.selectCard2= true;
-            };
-    },
+        ajoutFilms(){
+            this.mesFilms.push(this.nomFilms);
+        },
 
 },
 
