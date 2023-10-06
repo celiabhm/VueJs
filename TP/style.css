@@ -1,0 +1,47 @@
+.giflol {
+    max-width: 250px;
+    max-height: 250px;
+    margin: 15px;
+}
+
+.giflol2 {
+    max-width: 250px;
+    max-height: 250px;
+    margin: 15px;
+    object-position: right;
+    
+}
+
+.barre_de_vie {
+
+    border: 2px solid black;
+    height: 15px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+.monstre, .joueur {
+
+    border: 2px solid rgb(61, 61, 61);
+    margin: 5px;
+}
+
+.game {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+ h2 {
+    text-align: center;
+    text-decoration: underline;
+ }
+.bg {
+    background-color: green;
+    height: 15px;
+}
+
+/* .barre_de_vie{
+    background-color: aqua;
+} */

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jeu de combat</title>
+</head>
+<body id="monApp">
+        <div class="monstre">
+            <div>
+                <img src="content/ragnaros.gif" alt="Too Soon" class="giflol">
+            </div>
+            <h2>Monstre</h2>
+            <div class="barre_de_vie">
+                <div class="bg" :style="test">
+                </div>
+            </div>
+        </div>
+        <h2 v-if="winner">Vous avez Gagné !</h2>
+        <h2 v-else-if="looser">Vous avez Perdu !</h2>
+        <h2 v-else-if="draw">Egalité !</h2>
+        <div class="joueur">
+            <div>
+                <img src="content/gimli-yep.gif" alt="Yep" class="giflol2">
+            </div>
+            <h2>Joueur</h2>
+            <div class="barre_de_vie">
+                <div class="bg" :style="{'width' : joueur.vie + '%'}">
+                </div>
+            </div>
+        </div>
+        <div class="game">
+            <input type="button" value="Attaquer" v-on:click="attackJoueur()">
+            <input type="button" value="Coup Special" v-on:click="coupSpecial()" :disabled="!validate">
+            <input type="button" value="Soin" v-on:click="seSoigner()">
+            <input type="button" value="Abandon" v-on:click="lolFF()">
+        </div>
+        <script src="https://unpkg.com/vue@next"></script>
+        <script src="pokemon.js"></script>
+</body>
+</html>
